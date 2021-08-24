@@ -1,5 +1,6 @@
 import React , { useState } from 'react';
 import UserList from '../userList/UserList';
+import './userForm.css';
 
 interface UserData {
     id: number | undefined;
@@ -37,17 +38,17 @@ export default function UserForm() {
             <div className="main-wrap">
 
                 {/* User Form component */}
-                <div className="info_wrap">
-                    <div className="info_card">
+                <div className="userForm-wrap">
+                    <div className="userForm-card">
                         <form onSubmit={handleSubmit}>
-                            <input type="text" className="info_input" value={userInfo.name} onChange={handleChange} name="name" placeholder="Name" autoFocus />
-                            <input type="number" className="info_input" value={userInfo.age} onChange={handleChange} name="age" placeholder="Age" />
-                            <div className="info_radio_wrap">
+                            <input type="text" className="userForm-card-input" value={userInfo.name} onChange={handleChange} name="name" placeholder="Name" autoFocus />
+                            <input type="number" className="userForm-card-input" value={userInfo.age} onChange={handleChange} name="age" placeholder="Age" />
+                            <div className="userForm-card-radioWrap">
                                 <div><input type="radio" name="gender" onChange={handleChange} id="gender_male" value="Male" /><label htmlFor="gender_male"> Male</label></div>
                                 <div><input type="radio" name="gender" onChange={handleChange} id="gender_female" value="Female" /><label htmlFor="gender_female"> Female</label></div>
                                 <div><input type="radio" name="gender" onChange={handleChange} id="gender_others" value="Others" /><label htmlFor="gender_others"> Others</label></div>
                             </div>
-                            <button type="submit" className="info_btn">{(isUpdate == 0) ? "Add" : "Update"}</button>
+                            <button type="submit" className="userForm-card-btn">{(isUpdate === 0) ? "Add" : "Update"}</button>
                         </form>
                     </div>
                 </div>
