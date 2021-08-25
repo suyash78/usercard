@@ -61,7 +61,7 @@ export default function UserForm() {
                             <div key={userRef.id}>
                                 <UserList userName={userRef.name} userAge={userRef.age} UserGender={userRef.gender} 
                                     deleteClick={() => setUserInfoList( userInfoList.filter( (arrEel , index) => index!==mapIndex ))} 
-                                    updateClick={() => {
+                                    editClick={() => {
                                         let findUser: UserData | undefined = userInfoList.find( user => user.id === userRef.id );
                                         setUserInfo({id: findUser?.id , name: findUser?.name , age: findUser?.age , gender: findUser?.gender })
                                         setUserIndex(mapIndex);

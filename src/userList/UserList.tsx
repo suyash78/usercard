@@ -6,10 +6,10 @@ interface Props {
     userAge: number | undefined;
     UserGender: string | undefined;
     deleteClick: React.MouseEventHandler;
-    updateClick: React.MouseEventHandler;
+    editClick: React.MouseEventHandler;
 }
 
-const UserList : React.FC<Props> = ({ userName , userAge , UserGender , deleteClick , updateClick }) => {
+const UserList : React.FC<Props> = ({ userName , userAge , UserGender , deleteClick , editClick }) => {
     return (
         <div className="userList-card">
             <div className="userList-card-userInfo">Name : {userName}</div>|
@@ -17,7 +17,7 @@ const UserList : React.FC<Props> = ({ userName , userAge , UserGender , deleteCl
             <div className="userList-card-userInfo">Gender : {UserGender}</div>
             <div className="userList-card-btnWrap">
                 <button onClick={deleteClick} className="userList-card-btn userList-card-deleteBtn">Delete</button>
-                <button onClick={updateClick} className="userList-card-btn userList-card-updateBtn">Edit</button>
+                <button onClick={editClick} className="userList-card-btn userList-card-editBtn">Edit</button>
             </div>
         </div>
     );
