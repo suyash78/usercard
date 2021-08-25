@@ -17,7 +17,7 @@ const UserList : React.FC<Props> = ({ userName , userAge , UserGender , deleteCl
             <div className="userList-card-userInfo">Gender : {UserGender}</div>
             <div className="userList-card-btnWrap">
                 <button onClick={deleteClick} className="userList-card-btn userList-card-deleteBtn">Delete</button>
-                <button onClick={updateClick} className="userList-card-btn userList-card-updateBtn">Update</button>
+                <button onClick={updateClick} className="userList-card-btn userList-card-updateBtn">Edit</button>
             </div>
         </div>
     );
