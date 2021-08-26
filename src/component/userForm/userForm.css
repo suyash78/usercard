@@ -24,14 +24,8 @@ body { background-color: #8d99ae; }
     width: 90%;
     max-width: 500px;
     padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: #e09f3e;
-    border-radius: 10px;
-    box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.5);
-    -o-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 6px 20px 0px rgba(0,0,0,0.5);
+    background-color: #e09f3e !important;
+    border-radius: 10px !important;
 }
 
 .userForm-card-input , .userForm-card-radioWrap {
@@ -56,18 +50,18 @@ body { background-color: #8d99ae; }
     font-size: 25px;
     box-shadow: none;
 }
-
+/* 
 .userForm-card-btn {
     width: 90%;
     display: block;
-    margin: auto;
+    margin: auto !important;
     padding: 8px 10px;
-    font-size: 25px;
-    background-color: #52b788;
+    font-size: 25px !important;
+    background-color: #52b788 !important;
     border: 2px solid #fff;
     color: #fff;
     border-radius: 10px;
-}
+} */
 
 .userList-card-wrap {
     width: 50%;
